@@ -1,0 +1,11 @@
+# Class and Methods
+RACM600		KEYWORD1
+begin					KEYWORD2
+enableOutput		KEYWORD2
+disableOutput				KEYWORD2
+clearFaults   KEYWORD2
+readVoltage   KEYWORD2
+readCurrent   KEYWORD2
+readTemperature   KEYWORD2
+
+# Constants
