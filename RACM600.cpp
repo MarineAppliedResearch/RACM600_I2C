@@ -97,8 +97,8 @@ float RACM600::readACINPUTTemperature() {
 }
 
 // Read Temperature of the LLC resonant converter stage
-float RACM600::readDCOUTPUTTemperature(RACM600_READ_TEMPERATURE_3) {
-    uint16_t raw = readCommand(0x8F);  // READ_TEMPERATURE_3 Command
+float RACM600::readDCOUTPUTTemperature() {
+    uint16_t raw = readCommand(RACM600_READ_TEMPERATURE_3);  // READ_TEMPERATURE_3 Command
     return raw;  // Already in °C
 }
 

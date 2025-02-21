@@ -41,11 +41,15 @@ void setup() {
 void loop() {
     float voltage = psu.readVoltage();
     float current = psu.readCurrent();
-    float temperature = psu.readTemperature();
+    float ambientTemperature = psu.readAmbientTemperature();
+    float ACTemperature = psu.readACINPUTTemperature();
+    float DCTempterature = psu.readDCOUTPUTTemperature();
 
     Serial.print("Voltage: "); Serial.print(voltage); Serial.println(" V");
     Serial.print("Current: "); Serial.print(current); Serial.println(" A");
-    Serial.print("Temperature: "); Serial.print(temperature); Serial.println(" °C");
+    Serial.print("Ambient Temperature: "); Serial.print(ambientTemperature); Serial.println(" °C");
+    Serial.print("     AC Temperature: "); Serial.print(ACTemperature); Serial.println(" °C");
+    Serial.print("     DC Temperature: "); Serial.print(DCTempterature); Serial.println(" °C");
     
     delay(1000);
 }

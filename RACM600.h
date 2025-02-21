@@ -78,7 +78,7 @@ public:
     void enableOutput();
     void disableOutput();
     void clearFaults();
-    void readFaults();
+    uint16_t readFaults();
     float readVoltage();
     float readCurrent();
     float readAmbientTemperature();
